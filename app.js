@@ -9,7 +9,7 @@ const weather={};
 
 //temp var
 weather.temperature={
-    unit:"Celsius"
+    unit:"celsius"
 }
 
 const KELVIN=273;
@@ -83,7 +83,7 @@ function celsiusToFahr(temperature){
 tempElement.addEventListener("click",function(){
     if(weather.temperature.value===undefined) return;
     
-    if(weather.temperature.value === "celsius"){
+    if(weather.temperature.unit === "celsius"){
         let fahrenheit=celsiusToFahr(weather.temperature.value);
         fahrenheit=Math.floor(fahrenheit);
 
